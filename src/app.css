@@ -1,0 +1,114 @@
+#app-main {
+  font-family: 'Hack', monospace;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 2rem 2rem 2rem;
+  text-align: center;
+}
+
+#app {
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.preact:hover {
+  filter: drop-shadow(0 0 2em #673ab8aa);
+}
+
+.main-info {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.main-info-image {
+  width: 128px;
+  height: 128px;
+  border-radius: 100%;
+  margin: 6px 6px 6px 6px;
+}
+
+.main-info-title {
+  font-size: 42pt;
+}
+
+.main-info-subtitle {
+  font-size: 26pt;
+  font-style: italic;
+  color: #5c6370;
+}
+
+.quiet {
+  color: var(--color-gray);
+  font-style: italic;
+}
+
+.section {
+  font-size: 22pt;
+}
+
+.highlight {
+    color: #e5c07b;
+}
+
+@media (max-width: 480px) {
+  .main-info-title {
+    font-size: 32pt;
+  }
+
+  .main-info-subtitle {
+    font-size: 18pt;
+  }
+}
+
+@media (max-width: 1150px) and (min-width: 480px) {
+  .main-info-title {
+    font-size: 42pt;
+  }
+
+  .main-info-subtitle {
+    font-size: 26pt;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-info-title {
+    font-size: 42pt;
+  }
+
+  .main-info-subtitle {
+    font-size: 26pt;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .about-paragraph {
+      margin: auto;
+      font-size: 16pt;
+      max-width: 90%;
+  }
+}
+
+@media (max-width: 1150px) and (min-width: 480px) {
+  .about-paragraph {
+      margin: auto;
+      font-size: 18pt;
+      max-width: 80%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .about-paragraph {
+      margin: auto;
+      font-size: 18pt;
+      max-width: 60%;
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "duckonaut.dev",
+  "homepage": "https://duckonaut.dev",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "predeploy": "pnpm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "preact": "^10.17.0",
+    "preact-router": "^4.1.2",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.5.0",
+    "@types/react-slick": "^0.23.10",
+    "gh-pages": "^6.0.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9"
+  }
+}
