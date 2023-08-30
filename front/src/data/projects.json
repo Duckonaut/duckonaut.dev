@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Spirit Mod",
+    "name_normalized": "spirit-mod",
+    "type": "project",
+    "link": "https://spiritmod.fandom.com/wiki/Spirit_Mod_Wiki",
+    "tech": [
+      "csharp"
+    ],
+    "targets": [
+      "windows",
+      "linux",
+      "macos"
+    ],
+    "images": [
+      "thumbnail.png",
+      "demo1.gif",
+      "demo2.gif"
+    ],
+    "description": "The Spirit Mod is one of the largest mods for Terraria: with more than 1300 items, 8 bosses, and hundreds of enemies, as well as 3 new events and 3 brand new biomes, the mod has a lot to offer. <br /> I had the privilege of contributing some system code, mainly the \"Stargoop\" system."
+  }
+]
