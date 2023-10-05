@@ -8,7 +8,7 @@ export default function Home() {
         <div class="main-info-subtitle">
           aka Duckonaut, EchoDuck
         </div>
-        <img src="assets/images/duckpfp.png" class="main-info-image logo grow" />
+        <img src="assets/images/favicon.svg" class="main-info-image logo grow" />
 
         <div class="about-paragraph">
           <p>
