@@ -13,14 +13,14 @@ export default function Projects() {
         <div class="main-info-subtitle">
           projects that are not games
         </div>
-      </div>
 
-      <div class="projects-container">
-        {
-          projects.map((project) => (
-            Project(project)
-          ))
-        }
+        <div class="projects-container">
+          {
+            projects.map((project) => (
+              Project(project)
+            ))
+          }
+        </div>
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 /* on big screens, navbar is fixed to the top of the screen */
 .navbar-container {
   position: fixed;
-  background-color: var(--color-bg);
+  /* gradient from top to bottom, full to transparent */
   top: 0;
   width: 100%;
   z-index: 9999;
@@ -16,11 +16,12 @@
 }
 
 .navbar {
-  margin-top: 20pt;
-  margin-bottom: 12pt;
+  padding-top: 20pt;
+  padding-bottom: 12pt;
   align-items: center;
   justify-content: center;
   align-self: center;
+  background: linear-gradient(to bottom, var(--color-bg) 0%, var(--color-bg) 75%, rgba(0, 0, 0, 0) 100%);
 }
 
 .navbar-icon {

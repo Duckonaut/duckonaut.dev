@@ -6,6 +6,7 @@ import Home from './pages/home'
 import { Router, Route, CustomHistory } from 'preact-router';
 import Projects from './pages/projects';
 import { HashHistory, createHashHistory } from 'history';
+import { AnimatedBg } from './components/animated_bg';
 
 const hashHistoryAdapter = (hashHistory: HashHistory): CustomHistory => {
     return {
@@ -21,6 +22,7 @@ export function App() {
     return (
         <>
             <Navbar />
+            <div class="back-shadows"></div>
             <div id="app-main">
                 <Router history={history}>
                     <Route path="/" component={Home} />
@@ -28,6 +30,7 @@ export function App() {
                     <Route path="/games" component={Games} />
                     <Route path="/projects" component={Projects} />
                 </Router>
+                <AnimatedBg />
             </div>
         </>
     )

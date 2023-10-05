@@ -11,7 +11,7 @@ export default function Games() {
                     Game Projects
                 </div>
                 <div class="main-info-subtitle">
-                    my game projects, mostly from game jams
+                    games I've worked on
                 </div>
                 <div class="projects-container">
                     {
