@@ -28,6 +28,9 @@ export enum ProjectTarget {
   LINUX = "linux",
   MACOS = "macos",
   ANDROID = "android",
+  XBOX = "xbox",
+  PLAYSTATION = "playstation",
+  SWITCH = "switch",
   HYPRLAND = "hyprland",
 }
 

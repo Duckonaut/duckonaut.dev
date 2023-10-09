@@ -1,5 +1,22 @@
 [
   {
+    "name": "hyprload",
+    "name_normalized": "hyprload",
+    "type": "project",
+    "link": "https://github.com/duckonaut/hyprload",
+    "tech": [
+      "cpp"
+    ],
+    "targets": [
+      "linux",
+      "hyprland"
+    ],
+    "images": [
+      "logo.png"
+    ],
+    "description": "hyprload acts as a plugin manager for the Hyprland Wayland Compositor. It's loaded as a plugin and allows easy, declarative installation and updates of other plugins."
+  },
+  {
     "name": "Spirit Mod",
     "name_normalized": "spirit-mod",
     "type": "project",

@@ -43,6 +43,29 @@
     "description": "A physics puzzle game in which you need to protect little creatures from danger that could come from any direction. Build forts with tetris-style blocks. The game features 30+ levels, multiple distinct enemies and a star rating system. <br /> Game made in 72 hours for <a href=\"https://ldjam.com/events/ludum-dare/49\">Ludum Dare 49</a>, with the theme \"Unstable\"."
   },
   {
+    "name": "LOUD: My Road To Fame",
+    "name_normalized": "loud",
+    "type": "game",
+    "link": "https://store.steampowered.com/app/1838290/LOUD_My_Road_to_Fame/",
+    "tech": [
+      "unity",
+      "csharp"
+    ],
+    "targets": [
+      "windows",
+      "xbox",
+      "playstation",
+      "switch"
+    ],
+    "images": [
+      "thumbnail.jpg",
+      "screenshot1.jpg",
+      "screenshot2.jpg",
+      "screenshot3.jpg"
+    ],
+    "description": "A wholesome, music-filled arcade rhythm game in which a young, reclusive rocker goes on a journey of self-discovery. Once she begins to follow her dreams and finds her inner voice, she discovers that it is LOUD! <br /> One of the games I've worked on at Hyperstrange"
+  },
+  {
     "name": "WUZMAG",
     "name_normalized": "wuzmag",
     "type": "game",
@@ -121,8 +144,7 @@
       "title.png",
       "screenshot1.png",
       "screenshot2.png",
-      "screenshot3.png",
-      "screenshot4.png"
+      "screenshot3.png"
     ],
     "description": "Tiny idle simulation game where you manage a team of randomly generated little fellas as they fight other greachers in a sidescrolling world with beautiful procedurally generated graphics. <br /> Game made in 2 weeks for <a href=\"https://itch.io/jam/lowrezjam-2021\">LOWREZJAM 2021</a>, with the theme \"Minibeasts\"."
   },
@@ -140,10 +162,10 @@
     ],
     "images": [
       "thumbnail.png",
-      "screenshot1.png",
-      "screenshot2.png",
-      "screenshot3.png",
-      "screenshot4.png"
+      "screenshot1.jpg",
+      "screenshot2.jpg",
+      "screenshot3.jpg",
+      "screenshot4.jpg"
     ],
     "description": "A top-down stealth game where you play as a spy tasked with stealing important data from a rivaling government. Your task would be easy enough if your objective wasn’t in a underground top-secret facility handling an alien outbreak. Without access to conventional stealth techniques, use corpses of your enemies to sneak through the battlefield. <br /> Game made in 72 hours for <a href=\"https://ldjam.com/events/ludum-dare/48/\">Ludum Dare 48</a>, with the theme \"Deeper and deeper\"."
   },
@@ -161,9 +183,9 @@
     ],
     "images": [
       "thumbnail.png",
-      "screenshot1.png",
-      "screenshot2.png",
-      "screenshot3.png"
+      "screenshot1.jpg",
+      "screenshot2.jpg",
+      "screenshot3.jpg"
     ],
     "description": "A simple pacman-inspired arcade game. Try to grab all the stars in a randomly generated maze before the time expires, while your controls are scattered all over the screen. Get as far as you can to get the highest score. <br /> Game made in 8 hours for <a href=\"https://itch.io/jam/jamjam-bhl-kntg-polygon\">Jam Jam</a>, a local in-person event organized by <a href=\"https://www.kntgpolygon.pl/\">KNTG Polygon</a>, with the theme \"One Click\"."
   },
