@@ -1,6 +1,6 @@
 import { Shaders, Node, GLSL } from "gl-react";
 import { Surface } from "gl-react-dom";
-import React from "preact/compat";
+import React, { FunctionComponent } from "preact/compat";
 import { PropsWithChildren } from "preact/compat";
 
 const shaders = Shaders.create({
@@ -88,7 +88,7 @@ const AnimatedBgInternal = ({ tick }: { tick: number }) => {
 //
 // accepts a JSX component as an argument
 const timeLoop = (
-    C: (props: PropsWithChildren<{ tick: number }>) => React.JSX.Element,
+    C: FunctionComponent<PropsWithChildren<{ tick: number }>>,
     { refreshRate }: { refreshRate: number }
 ) => {
     return class TimeLoop extends React.Component {
