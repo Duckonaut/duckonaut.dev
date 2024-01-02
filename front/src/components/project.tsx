@@ -86,11 +86,13 @@ export function Project(props: ProjectDescriptor) {
           }
         </div>
       </div>
-      <Carousel>
-        {props.images.map((image) => (
-          <img class="project-image" src={getProjectImageLink(props, image)} />
-        ))}
-      </Carousel>
+      {props.images && props.images.length > 0 &&
+        <Carousel>
+          {props.images.map((image) => (
+            <img class="project-image" src={getProjectImageLink(props, image)} />
+          ))}
+        </Carousel>
+      }
     </div>
   );
 }
