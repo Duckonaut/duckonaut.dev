@@ -13,9 +13,7 @@
     buildPhase = ''
       ln -s ${nodeDependencies}/lib/node_modules ./node_modules
       export PATH="${nodeDependencies}/bin:$PATH"
-      echo "PATH: $PATH"
 
-      # Build the distribution bundle in "dist"
       npm run build
       cp -r dist $out/
     '';
