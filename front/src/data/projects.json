@@ -17,6 +17,20 @@
     "description": "hyprload acts as a plugin manager for the Hyprland Wayland Compositor. It's loaded as a plugin and allows easy, declarative installation and updates of other plugins."
   },
   {
+    "name": "split-monitor-workspaces",
+    "name_normalized": "split-monitor-workspaces",
+    "type": "project",
+    "link": "https://github.com/duckonaut/split-monitor-workspaces",
+    "tech": [
+      "cpp"
+    ],
+    "targets": [
+      "linux",
+      "hyprland"
+    ],
+    "description": "A small plugin for the Hyprland Wayland Compositor that allows you to have different workspace namespaces on different monitors."
+  },
+  {
     "name": "Spirit Mod",
     "name_normalized": "spirit-mod",
     "type": "project",
