@@ -1,0 +1,60 @@
+local Carousel = require('components.carousel')
+
+function getProjectImageLink(project, image)
+  return 'assets/' .. project.type .. 's/' .. project.name_normalized .. '/' .. image
+end
+
+function getProjectTechIconLink(tech)
+  return 'assets/images/' .. tech .. '.png'
+end
+
+function getProjectTargetIconLink(target)
+  return 'assets/images/' .. target .. '.png'
+end
+
+return function (props)
+  local project = props.attrs.project
+  local techs = {}
+  for _, tech in ipairs(project.tech) do
+    techs[#techs + 1] = <img class="grow icon" src={getProjectTechIconLink(tech)} />
+  end
+  local targets = {}
+  for _, target in ipairs(project.targets) do
+    targets[#targets + 1] = <img class="grow icon" src={getProjectTargetIconLink(target)} />
+  end
+
+  local images = nil
+  if project.images then
+    images = {}
+    for _, image in ipairs(project.images) do
+      images[#images + 1] = <img class="carousel-item" src={getProjectImageLink(project, image)} />
+    end
+
+    images = <Carousel>{$ images $}</Carousel>
+  end
+
+  return (
+    <div class="project">
+      <div class="project-title"><a href={project.link}>{$ project.name $}</a></div>
+      <div class="project-info">
+        <div class="icon-row">
+          <div class="icon-text">Made using</div>
+          <div class="icon-container">
+            {$ techs $}
+          </div>
+        </div>
+        <div class="icon-row">
+          <div class="icon-text">Available on</div>
+          <div class="icon-container">
+            {$ targets $}
+          </div>
+        </div>
+        <hr />
+        <div class="project-description">
+          {$ project.description $}
+        </div>
+      </div>
+      {$ images $}
+    </div>
+  )
+end

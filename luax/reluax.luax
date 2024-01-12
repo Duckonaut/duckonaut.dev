@@ -1,0 +1,48 @@
+local Common = require("common")
+local Navbar = require("components.navbar")
+local AnimatedBg = require("components.animated_bg")
+
+local Home = require("pages.home")
+local Projects = require("pages.projects")
+local Games = require("pages.games")
+local Contact = require("pages.contact")
+local Article = require("pages.article")
+local NotFound = require("not_found")
+
+math.randomseed(os.time())
+
+local function wrap_component(component)
+    return
+    <Common>
+        <Navbar />
+        <div class="back-shadows"></div>
+        <div id="app-main">
+            {$ component $}
+            <AnimatedBg />
+        </div>
+    </Common>
+end
+
+local function route(path)
+    if path == '/' then
+        return 200, wrap_component(<Home />)
+    elseif path == '/projects' then
+        return 200, wrap_component(<Projects />)
+    elseif path == '/games' then
+        return 200, wrap_component(<Games />)
+    elseif path == '/contact' then
+        return 200, wrap_component(<Contact />)
+    elseif reluax.url_matches('/article/{title}', path) then
+        local title = reluax.url_extract('/article/{title}', path).title
+        local article = <Common><Article title={title} /></Common>
+        return 200, article
+    end
+
+    return 404, NotFound()
+end
+
+return {
+    name = "hello-world",
+    route = route
+}
+

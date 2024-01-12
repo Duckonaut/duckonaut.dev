@@ -1,0 +1,278 @@
+/* on big screens, navbar is fixed to the top of the screen */
+.navbar-container {
+  position: fixed;
+  /* gradient from top to bottom, full to transparent */
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  margin: auto;
+}
+
+/* on smaller ones, make it behave as a normal element laid out at the top of the page */
+@media (max-width: 1150px) {
+  .navbar-container {
+    position: static;
+  }
+}
+
+.navbar {
+  padding-top: 20pt;
+  padding-bottom: 12pt;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  background: linear-gradient(to bottom, var(--color-bg) 0%, var(--color-bg) 75%, rgba(0, 0, 0, 0) 100%);
+}
+
+.navbar-icon {
+  font-family: Hack, monospace;
+  font-weight: 500;
+  color: #646cff;
+  font-size: 1.5em;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.navbar {
+  align-self: center;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-item {
+  font-family: Hack, monospace;
+  font-size: 18pt;
+  text-align: center;
+  float: none;
+  clear: left;
+  display: inline-block;
+  margin: 0 0.25em;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-item:hover {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-current {
+  font-weight: bold;
+}
+
+/* home */
+
+.navbar-item-home:link {
+  color: #98C379;
+  text-decoration: none;
+}
+
+.navbar-item-home:visited {
+  color: #98C379;
+  text-decoration: none;
+}
+
+.navbar-item-home:hover {
+  color: #afd088;
+  text-decoration: underline;
+}
+
+.navbar-item-home:active {
+  color: #afd088;
+  text-decoration: underline;
+}
+
+/* games */
+
+.navbar-item-games:link {
+  color: #e06c75;
+  text-decoration: none;
+}
+
+.navbar-item-games:visited {
+  color: #e06c75;
+  text-decoration: none;
+}
+
+.navbar-item-games:hover {
+  color: #ef7a80;
+  text-decoration: underline;
+}
+
+.navbar-item-games:active {
+  color: #ef7a90;
+  text-decoration: underline;
+}
+
+/* projects */ 
+
+.navbar-item-projects:link {
+  color: #d19a66;
+  text-decoration: none;
+}
+
+.navbar-item-projects:visited {
+  color: #d19a66;
+  text-decoration: none;
+}
+
+.navbar-item-projects:hover {
+  color: #dfa873;
+  text-decoration: underline;
+}
+
+.navbar-item-projects:active {
+  color: #dffa73;
+  text-decoration: underline;
+}
+
+/* github */ 
+
+.navbar-item-github:link {
+  color: #c678dd;
+  text-decoration: none;
+}
+
+.navbar-item-github:visited {
+  color: #c678dd;
+  text-decoration: none;
+}
+
+.navbar-item-github:hover {
+  color: #d286eb;
+  text-decoration: underline;
+}
+
+.navbar-item-github:active {
+  color: #d286eb;
+  text-decoration: underline;
+}
+
+/* itch */ 
+
+.navbar-item-itch:link {
+  color: #e06c75;
+  text-decoration: none;
+}
+
+.navbar-item-itch:visited {
+  color: #e06c75;
+  text-decoration: none;
+}
+
+.navbar-item-itch:hover {
+  color: #ef7a80;
+  text-decoration: underline;
+}
+
+.navbar-item-itch:active {
+  color: #ef7a90;
+  text-decoration: underline;
+}
+
+/* twitter */ 
+
+.navbar-item-twitter:link {
+  text-decoration: none;
+}
+
+.navbar-item-twitter:visited {
+  text-decoration: none;
+}
+
+.navbar-item-twitter:hover {
+  text-decoration: underline;
+}
+
+.navbar-item-twitter:active {
+  text-decoration: underline;
+}
+
+/* mastodon */
+
+.navbar-item-mastodon:link {
+  color: #6a4ae0;
+  text-decoration: none;
+}
+
+.navbar-item-mastodon:visited {
+  color: #6a4ae0;
+  text-decoration: none;
+}
+
+.navbar-item-mastodon:hover {
+  color: #7a55e8;
+  text-decoration: underline;
+}
+
+.navbar-item-mastodon:active {
+  color: #7a55e8;
+  text-decoration: underline;
+}
+
+/* cohost */
+
+.navbar-item-cohost:link {
+  color: #b63b73;
+  text-decoration: none;
+}
+
+.navbar-item-cohost:visited {
+  color: #b63b73;
+  text-decoration: none;
+}
+
+.navbar-item-cohost:hover {
+  color: #c54a7f;
+  text-decoration: underline;
+}
+
+.navbar-item-cohost:active {
+  color: #c54a7f;
+  text-decoration: underline;
+}
+
+/* tumblr */
+
+.navbar-item-tumblr:link {
+  color: #00b8ff;
+  text-decoration: none;
+}
+
+.navbar-item-tumblr:visited {
+  color: #00b8ff;
+  text-decoration: none;
+}
+
+.navbar-item-tumblr:hover {
+  color: #00c5ff;
+  text-decoration: underline;
+}
+
+.navbar-item-tumblr:active {
+  color: #00c5ff;
+  text-decoration: underline;
+}
+
+/* contact */ 
+
+.navbar-item-contact:link {
+  color: #e5c07b;
+  text-decoration: none;
+}
+
+.navbar-item-contact:visited {
+  color: #e5c07b;
+  text-decoration: none;
+}
+
+.navbar-item-contact:hover {
+  color: #f2ce89;
+  text-decoration: underline;
+}
+
+.navbar-item-contact:active {
+  color: #f2ce89;
+  text-decoration: underline;
+}

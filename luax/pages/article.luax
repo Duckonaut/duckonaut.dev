@@ -1,0 +1,3 @@
+return function(props)
+    return <h1>{$ props.attrs.title $}</h1>
+end

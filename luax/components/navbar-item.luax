@@ -1,0 +1,6 @@
+return function(props)
+  return
+  <a class={'navbar-item navbar-item-' .. props.attrs.name} href={props.attrs.href} rel={props.attrs.rel}>
+    {$ props.children $}
+  </a>
+end

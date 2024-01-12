@@ -1,0 +1,10 @@
+return function(props)
+  if props == nil or props.children == nil or #props.children == 0 then
+    return nil
+  end
+
+  return
+  <div class="carousel-wrapper">
+    {$ props.children $}
+  </div>
+end

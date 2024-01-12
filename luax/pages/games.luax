@@ -1,0 +1,25 @@
+local Project = require("components.project")
+
+local games = require("data.games")
+
+local game_display = {}
+for _, game in ipairs(games) do
+  game_display[#game_display + 1] = <Project project={game} />
+end
+
+return function()
+  return
+    <div class="main-info">
+      <div class="main-info-title">
+          Game Projects
+      </div>
+      <div class="main-info-subtitle">
+        games I've worked on
+      </div>
+
+      <div class="games-container">
+        {$ game_display $}
+      </div>
+    </div>
+end
+
