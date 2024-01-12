@@ -18,14 +18,14 @@ return function()
         </div>
         <span class="quiet">for the FOSS folks</span>
         <br />
-        <span class="highlight">*@echoduck</span>:matrix.org
+        <span class="highlight">@echoduck</span>:matrix.org
 
         <div class="contact">
           Email
         </div>
         <span class="quiet">I check my email daily</span>
         <br />
-        <span class="highlight">duckonaut</span>*@gmail.com
+        <span class="highlight">duckonaut</span>@gmail.com
       </div>
     </div>
 end

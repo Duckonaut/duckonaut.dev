@@ -23,14 +23,14 @@ return <html lang="en">
 
     <script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
 
-    <script src="/index.js"></script>
+    <script src="/assets/index.js"></script>
 
-    <link rel="stylesheet" href="/app.css" />
-    <link rel="stylesheet" href="/index.css" />
-    <link rel="stylesheet" href="/contact.css" />
-    <link rel="stylesheet" href="/project.css" />
-    <link rel="stylesheet" href="/navbar.css" />
-    <link rel="stylesheet" href="/carousel.css" />
+    <link rel="stylesheet" href="/assets/app.css" />
+    <link rel="stylesheet" href="/assets/index.css" />
+    <link rel="stylesheet" href="/assets/contact.css" />
+    <link rel="stylesheet" href="/assets/project.css" />
+    <link rel="stylesheet" href="/assets/navbar.css" />
+    <link rel="stylesheet" href="/assets/carousel.css" />
 
     <meta property="og:image" content="/assets/images/thumbnail.png" />
     <meta property="og:title" content="duckonaut.dev" />
