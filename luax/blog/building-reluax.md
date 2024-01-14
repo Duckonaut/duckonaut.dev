@@ -108,8 +108,8 @@ experience writing a language in it from writing [brakion](https://github.com/Du
 and I could copy the lexer almost in full. Rust would also provide a good ecosystem for the
 HTTP server portion, with battle-tested libraries like [hyper](https://hyper.rs/). I didn't go
 for any of the higher-level libraries like [axum](https://github.com/tokio-rs/axum), since I
-felt like I wouldn't really benefit from them, since what I was building was not to be a layer
-on top of one, but a replacement of it.
+felt like I wouldn't really benefit from them. What I was building was not to be a layer on top
+of one, but a replacement of it.
 
 The parser portion took a bit, but it was not anything too complex. Writing a lexer that
 simultaneously structres the data, but can emit whatever garbage comes inside of an HTML tag, was
