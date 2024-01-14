@@ -6,8 +6,11 @@ local Home = require("pages.home")
 local Projects = require("pages.projects")
 local Games = require("pages.games")
 local Contact = require("pages.contact")
-local Article = require("pages.article")
+local Blogpost = require("pages.blogpost")
+local Blog = require("pages.blog")
 local NotFound = require("not_found")
+
+local blogposts = require("blog.posts")
 
 math.randomseed(os.time())
 
@@ -32,17 +35,29 @@ local function route(path)
         return 200, wrap_component(<Games />)
     elseif path == '/contact' then
         return 200, wrap_component(<Contact />)
-    elseif reluax.url_matches('/article/{title}', path) then
-        local title = reluax.url_extract('/article/{title}', path).title
-        local article = <Common><Article title={title} /></Common>
+    elseif path == '/blog' then
+        return 200, wrap_component(<Blog />)
+    elseif reluax.url_matches('/blog/{slug}', path) then
+      local slug = reluax.url_extract('/blog/{slug}', path).slug
+      -- blogposts is a list of blogposts, with the slug a property of each
+      local post = nil
+      for _, p in ipairs(blogposts) do
+        if p.slug == slug then
+          post = p
+          break
+        end
+      end
+      if post then
+        local article = wrap_component(<Blogpost post={post} />)
         return 200, article
+      end
     end
 
     return 404, NotFound()
 end
 
 return {
-    name = "hello-world",
+    name = "duckonaut.dev",
     route = route
 }
 

@@ -74,7 +74,7 @@ void main() {
 
   sandbox.load(shader_code);
 
-  sandbox.setUniform('t', "/assets/images/symbols.png");
+  sandbox.setUniform('t', "https://cdn.duckonaut.dev/assets/images/symbols.png");
 
   sandbox.setUniform('color', 42 / 255, 42 / 255, 80 / 255);
 

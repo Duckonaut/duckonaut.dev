@@ -1,15 +1,15 @@
 local Carousel = require('components.carousel')
 
 function getProjectImageLink(project, image)
-  return 'assets/' .. project.type .. 's/' .. project.name_normalized .. '/' .. image
+  return 'https://cdn.duckonaut.dev/assets/' .. project.type .. 's/' .. project.name_normalized .. '/' .. image
 end
 
 function getProjectTechIconLink(tech)
-  return 'assets/images/' .. tech .. '.png'
+  return 'https://cdn.duckonaut.dev/assets/images/' .. tech .. '.png'
 end
 
 function getProjectTargetIconLink(target)
-  return 'assets/images/' .. target .. '.png'
+  return 'https://cdn.duckonaut.dev/assets/images/' .. target .. '.png'
 end
 
 return function (props)

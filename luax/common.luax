@@ -2,7 +2,7 @@ return function(props)
 return <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="https://cdn.duckonaut.dev/assets/images/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet"
           href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css" />
@@ -23,16 +23,17 @@ return <html lang="en">
 
     <script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
 
-    <script src="/assets/index.js"></script>
+    <script src="https://cdn.duckonaut.dev/assets/index.js"></script>
 
-    <link rel="stylesheet" href="/assets/app.css" />
-    <link rel="stylesheet" href="/assets/index.css" />
-    <link rel="stylesheet" href="/assets/contact.css" />
-    <link rel="stylesheet" href="/assets/project.css" />
-    <link rel="stylesheet" href="/assets/navbar.css" />
-    <link rel="stylesheet" href="/assets/carousel.css" />
+    <link rel="stylesheet" href="https://cdn.duckonaut.dev/assets/app.css" />
+    <link rel="stylesheet" href="https://cdn.duckonaut.dev/assets/index.css" />
+    <link rel="stylesheet" href="https://cdn.duckonaut.dev/assets/contact.css" />
+    <link rel="stylesheet" href="https://cdn.duckonaut.dev/assets/project.css" />
+    <link rel="stylesheet" href="https://cdn.duckonaut.dev/assets/navbar.css" />
+    <link rel="stylesheet" href="https://cdn.duckonaut.dev/assets/carousel.css" />
+    <link rel="stylesheet" href="https://cdn.duckonaut.dev/assets/blog.css" />
 
-    <meta property="og:image" content="/assets/images/thumbnail.png" />
+    <meta property="og:image" content="https://cdn.duckonaut.dev/assets/images/thumbnail.png" />
     <meta property="og:title" content="duckonaut.dev" />
     <meta property="og:description" content="duckonaut's stuff" />
     <meta property="og:url" content="https://duckonaut.dev" />

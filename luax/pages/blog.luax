@@ -1,0 +1,28 @@
+local blogposts = require('blog.posts')
+
+return function()
+  local blogpost_html = {}
+  for _, post in ipairs(blogposts) do
+    blogpost_html[#blogpost_html + 1] = 
+    <div class="blog-post">
+      <div class="blog-post-title">
+        {$ post.title $}
+      </div>
+      <div class="blog-post-date">
+        {$ os.date('%Y-%m-%d', post.date) $}
+      </div>
+      <div class="blog-post-description">
+        {$ post.description $}
+      </div>
+    </div>
+  end
+  return
+  <div class="main-info">
+    <div class="main-info-title">
+        Blog
+    </div>
+    <div class="blog-posts">
+      {$ blogpost_html $}
+    </div>
+  </div>
+end
