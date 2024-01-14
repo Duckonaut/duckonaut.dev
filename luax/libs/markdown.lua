@@ -1007,7 +1007,7 @@ local function highlight(lang, code)
     tmp_file:write(code)
     tmp_file:close()
     -- run tree-sitter highlight on the code with lang
-    local tree_sitter_output = io.popen("tree-sitter highlight -H " .. tmp_filename)
+    local tree_sitter_output = io.popen("/usr/bin/env tree-sitter highlight -H " .. tmp_filename)
     if not tree_sitter_output then
       error("Could not run tree-sitter highlight")
     end
