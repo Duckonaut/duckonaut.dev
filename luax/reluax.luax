@@ -48,7 +48,16 @@ local function route(path)
         end
       end
       if post then
-        local article = wrap_component(<Blogpost post={post} />)
+        local article =
+          <Common title={post.title} description={post.description}>
+            <Navbar />
+            <div class="back-shadows"></div>
+            <div id="app-main">
+              <Blogpost post={post} />
+              <AnimatedBg />
+            </div>
+          </Common>
+
         return 200, article
       end
     end

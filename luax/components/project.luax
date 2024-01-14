@@ -1,15 +1,17 @@
 local Carousel = require('components.carousel')
 
+local asset_prefix = reluax.dev_mode and '/assets/' or 'https://cdn.duckonaut.dev/assets/'
+
 function getProjectImageLink(project, image)
-  return 'https://cdn.duckonaut.dev/assets/' .. project.type .. 's/' .. project.name_normalized .. '/' .. image
+  return asset_prefix .. project.type .. 's/' .. project.name_normalized .. '/' .. image
 end
 
 function getProjectTechIconLink(tech)
-  return 'https://cdn.duckonaut.dev/assets/images/' .. tech .. '.png'
+  return asset_prefix .. 'images/' .. tech .. '.png'
 end
 
 function getProjectTargetIconLink(target)
-  return 'https://cdn.duckonaut.dev/assets/images/' .. target .. '.png'
+  return asset_prefix .. 'images/' .. target .. '.png'
 end
 
 return function (props)

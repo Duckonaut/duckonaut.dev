@@ -6,7 +6,10 @@ return function()
       <div class="main-info-subtitle">
         aka Duckonaut, EchoDuck
       </div>
-      <img src="https://cdn.duckonaut.dev/assets/images/favicon.svg" class="main-info-image logo grow" />
+      <img src={
+          (reluax.dev_mode and '' or 'https://cdn.duckonaut.dev') .. '/assets/images/favicon.svg'
+        }
+        class="main-info-image logo grow" />
 
       <div class="about-paragraph">
         <p>

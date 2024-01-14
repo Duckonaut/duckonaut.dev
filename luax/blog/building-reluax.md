@@ -112,7 +112,7 @@ felt like I wouldn't really benefit from them. What I was building was not to be
 of one, but a replacement of it.
 
 The parser portion took a bit, but it was not anything too complex. Writing a lexer that
-simultaneously structres the data, but can emit whatever garbage comes inside of an HTML tag, was
+simultaneously structures the data, but can emit whatever garbage comes inside of an HTML tag, was
 a bit tricky. But in two evenings I had a demo:
 
 ![the first demo](https://cdn.duckonaut.dev/assets/blog/building-reluax/first-demo.png)
