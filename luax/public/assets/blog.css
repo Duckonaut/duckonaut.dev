@@ -63,6 +63,29 @@ td.line-number {
   text-align: center;
 }
 
+.blog-post-header {
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 10px;
+}
+
+.blog-post-title {
+  font-size: 24pt;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-post-date {
+  font-size: 12pt;
+  font-style: italic;
+  color: #647089;
+  margin: 0;
+  padding: 0;
+}
+
 @media (max-width: 480px) {
   .post-content {
       margin: auto;

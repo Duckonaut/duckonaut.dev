@@ -5,6 +5,7 @@ return function()
     <div class="navbar-container">
       <div class="navbar">
         <NavbarItem name="home" href="/">[Home]</NavbarItem>
+        <NavbarItem name="blog" href="/blog">[Blog]</NavbarItem>
         <NavbarItem name="games" href="/games">[Games]</NavbarItem>
         <NavbarItem name="projects" href="/projects">[Other Projects]</NavbarItem>
         <NavbarItem name="github" href="https://github.com/Duckonaut">[GitHub]</NavbarItem>

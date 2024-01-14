@@ -5,11 +5,13 @@ return function()
   for _, post in ipairs(blogposts) do
     blogpost_html[#blogpost_html + 1] = 
     <div class="blog-post">
-      <div class="blog-post-title">
-        {$ post.title $}
-      </div>
-      <div class="blog-post-date">
-        {$ os.date('%Y-%m-%d', post.date) $}
+      <div class="blog-post-header">
+        <div class="blog-post-title">
+          <a href={"/blog/" .. post.slug}> {$ post.title $} </a>
+        </div>
+        <div class="blog-post-date">
+          {$ os.date('%Y-%m-%d', post.date) $}
+        </div>
       </div>
       <div class="blog-post-description">
         {$ post.description $}
