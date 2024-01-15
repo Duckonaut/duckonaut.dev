@@ -15,9 +15,8 @@ set -e
 echo "[1/5] Deleting old CDN branch"
 git branch -D cdn || true
 
-echo "[2/5] Creating new CDN branch"
-git checkout --orphan cdn
-git reset --hard
+echo "[2/5] Creating new CDN branch, moving all files to it"
+git checkout -b cdn
 
 echo "[3/5] Removing all files except public/*"
 dirs=$(find . -maxdepth 1 -type d -not -name public -not -name .git -not -name . -not -name ..)
