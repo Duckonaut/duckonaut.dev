@@ -85,24 +85,3 @@ td.line-number {
   margin: 0;
   padding: 0;
 }
-
-@media (max-width: 480px) {
-  .post-content {
-      margin: auto;
-      max-width: 96%;
-  }
-}
-
-@media (max-width: 1150px) and (min-width: 480px) {
-  .post-content {
-      margin: auto;
-      max-width: 80%;
-  }
-}
-
-@media (min-width: 1150px) {
-  .post-content {
-      margin: auto;
-      max-width: 60%;
-  }
-}

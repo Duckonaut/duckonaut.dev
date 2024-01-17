@@ -4,20 +4,16 @@ return function(props)
   local post = props.attrs.post
   local content = blog_cache(post)
   return
-  <div>
-    <div class="post">
-      <div class="main-info">
-        <div class="main-info-title">
-            {$ post.title $}
-        </div>
-        <div class="post-date">
-            {$ os.date('%Y-%m-%d', post.date) $}
-        </div>
-        <div class="post-description">
-            {$ post.description $}
-        </div>
-        <div class="post-content">{$ content $}</div>
+    <div class="main-info">
+      <div class="main-info-title">
+          {$ post.title $}
       </div>
+      <div class="post-date">
+          {$ os.date('%Y-%m-%d', post.date) $}
+      </div>
+      <div class="post-description">
+          {$ post.description $}
+      </div>
+      <div class="post-content">{$ content $}</div>
     </div>
-  </div>
 end

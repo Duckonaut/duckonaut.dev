@@ -5,6 +5,9 @@
   padding: 1rem 1rem 1rem 1rem;
   text-align: center;
   display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
   flex-grow: 1;
 }
 
@@ -48,12 +51,29 @@
   animation: fade-in 0.2s ease-in;
 }
 
-.main-info {
-  text-align: center;
+@media (max-width: 480px) {
+  #app-main {
+    max-width: 100%;
+    padding: 0;
+  }
+  .main-info {
+      max-width: 90%;
+  }
+}
+
+@media (max-width: 1150px) and (min-width: 480px) {
+  #app-main {
+    max-width: 100%;
+    padding: 0;
+  }
+  .main-info {
+      max-width: 80%;
+  }
 }
 
 @media (min-width: 1150px) {
   .main-info {
+      max-width: 1280px;
       margin-top: 72px;
   }
 }

@@ -286,11 +286,8 @@
   margin: auto;
 }
 
-/* if #app-main is shorter than the viewport, push the footer to the bottom of the page */
-@media (max-height: 100vh) {
-  .footer-container {
-    position: static;
-  }
+.footer-container {
+  position: static;
 }
 
 .footer {
@@ -306,6 +303,24 @@
   border-top: 2px solid #3e4451;
   display: flex;
   flex-direction: row;
+}
+
+@media (max-width: 480px) {
+  .footer {
+      max-width: 90%;
+  }
+}
+
+@media (max-width: 1300px) and (min-width: 480px) {
+  .footer {
+      max-width: 80%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .footer {
+    max-width: 1280px;
+  }
 }
 
 .footer-begin {
