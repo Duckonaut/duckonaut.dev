@@ -37,6 +37,10 @@
   --color-magenta: #b071fc;
 }
 
+html, body {
+  height: 100%;
+}
+
 a:link {
   font-weight: 500;
   color: #4fc1ff;

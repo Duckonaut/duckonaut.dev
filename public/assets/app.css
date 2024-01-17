@@ -4,6 +4,8 @@
   margin: 0 auto;
   padding: 1rem 1rem 1rem 1rem;
   text-align: center;
+  display: flex;
+  flex-grow: 1;
 }
 
 #app {
@@ -11,6 +13,9 @@
   text-align: center;
   align-content: center;
   justify-content: center;
+  min-height: 100% !important;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {

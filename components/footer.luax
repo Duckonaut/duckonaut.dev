@@ -1,0 +1,28 @@
+return function()
+  return
+    <div class="footer-container">
+      <div class="footer">
+        <div class="footer-begin">
+          <p class="footer-item">
+            <strong>© {$ os.date("%Y ") $}</strong>
+            <a class="footer-link" href="https://duckonaut.dev">duckonaut.dev</a>
+          </p>
+          <p class="footer-item">
+            Made with <span class="footer-heart">♥ </span> in
+            <a class="footer-link" href="https://github.com/Duckonaut/reluax">Reluax</a>
+          </p>
+        </div>
+        <div class="footer-middle">
+        </div>
+        <div class="footer-end">
+          <a href="https://github.com/Duckonaut">
+            <img
+              class="footer-icon"
+              src={(reluax.dev_mode and "" or "https://cdn.duckonaut.dev")
+                .. "/assets/images/github.svg"
+              } alt="Github" />
+          </a>
+        </div>
+      </div>
+    </div>
+end

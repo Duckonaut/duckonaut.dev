@@ -1,5 +1,6 @@
 local Common = require("common")
 local Navbar = require("components.navbar")
+local Footer = require("components.footer")
 local AnimatedBg = require("components.animated_bg")
 
 local Home = require("pages.home")
@@ -17,12 +18,13 @@ math.randomseed(os.time())
 local function wrap_component(component)
     return
     <Common>
-        <Navbar />
-        <div class="back-shadows"></div>
-        <div id="app-main">
-            {$ component $}
-            <AnimatedBg />
-        </div>
+      <Navbar />
+      <div class="back-shadows"></div>
+      <div id="app-main">
+        {$ component $}
+        <AnimatedBg />
+      </div>
+      <Footer />
     </Common>
 end
 
@@ -56,6 +58,7 @@ local function route(path)
               <Blogpost post={post} />
               <AnimatedBg />
             </div>
+            <Footer />
           </Common>
 
         return 200, article

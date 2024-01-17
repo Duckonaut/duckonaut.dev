@@ -1,7 +1,6 @@
 /* on big screens, navbar is fixed to the top of the screen */
 .navbar-container {
   position: fixed;
-  /* gradient from top to bottom, full to transparent */
   top: 0;
   width: 100%;
   z-index: 9999;
@@ -275,4 +274,89 @@
 .navbar-item-contact:active {
   color: #f2ce89;
   text-decoration: underline;
+}
+
+/* footer */
+/* if #app-main is taller than the viewport, push the footer to the bottom of the page */
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999;
+  margin: auto;
+}
+
+/* if #app-main is shorter than the viewport, push the footer to the bottom of the page */
+@media (max-height: 100vh) {
+  .footer-container {
+    position: static;
+  }
+}
+
+.footer {
+  max-width: 1280px;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20pt;
+  padding-bottom: 12pt;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  border-top: 2px solid #3e4451;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-begin {
+  align-self: left;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.footer-middle {
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  flex-grow: 1;
+}
+
+.footer-end {
+  align-self: right;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+.footer-item {
+  font-family: Hack, monospace;
+  font-size: 12pt;
+  color: #647089;
+  text-align: center;
+  float: none;
+  clear: left;
+  display: inline-block;
+  margin: 0 0.25em;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-link:link {
+  color: #647089;
+  text-decoration: underline;
+}
+
+.footer-link:visited {
+  color: #647089;
+  text-decoration: underline;
+}
+
+.footer-icon {
+  transition: all 0.2s ease-in-out;
+  width: 1.5em;
+  height: 1.5em;
+  filter: brightness(50%);
+}
+
+.footer-icon:hover {
+  transition: all 0.2s ease-in-out;
+  filter: brightness(100%) drop-shadow(0 0 0.5em #647089);
 }
