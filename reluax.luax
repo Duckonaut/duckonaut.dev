@@ -15,11 +15,6 @@ local blogposts = require("blog.posts")
 
 math.randomseed(os.time())
 
-local redirects = {
-    { slug = "mrfinalboss", url = "https://jellingfish-games.itch.io/mr-final-boss" },
-    { slug = "bumblingbuilders", url = "https://oroshibu.itch.io/bumbling-builders" }
-}
-
 local wrap_component = function(component)
     return
     <Common>
@@ -33,6 +28,11 @@ local wrap_component = function(component)
     </Common>
 end
 
+local redirects = {
+    ["mrfinalboss"] = "https://jellingfish-games.itch.io/mr-final-boss",
+    ["bumblingbuilders"] = "https://oroshibu.itch.io/bumbling-builders"
+}
+
 local route = function(path, method, headers, body)
     if method ~= 'GET' then
         return 405, "Method not allowed"
@@ -40,16 +40,10 @@ local route = function(path, method, headers, body)
 
     if reluax.url_matches('/r/{slug}', path) then
         local slug = reluax.url_extract('/r/{slug}', path).slug
-        local redirect = nil
-        for _, r in ipairs(redirects) do
-            if r.slug == slug then
-                redirect = r
-                break
-            end
-        end
+        local redirect = redirects[slug]
         if redirect then
             local headers = {
-                ["Location"] = redirect.url
+                ["Location"] = redirect
             }
             local body = <a>You are being redirected...</a>
             return 301, reluax.headers(body, headers)
