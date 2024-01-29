@@ -32,25 +32,6 @@
   filter: drop-shadow(0 0 2em #673ab8aa);
 }
 
-/* fade in */
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-    transform: translateY(1em);
-  }
-  60% {
-    transform: translateY(-0.2em);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.main-info > * {
-  animation: fade-in 0.2s ease-in;
-}
-
 @media (max-width: 480px) {
   #app-main {
     max-width: 100%;
