@@ -1,5 +1,26 @@
 return {
   {
+    name = "Globeba",
+    name_normalized = "globeba",
+    type = "game",
+    link = "https://team-bugulon.itch.io/globeba",
+    tech = {
+      "gamemaker",
+    },
+    targets = {
+      "windows",
+      "html5"
+    },
+    images = {
+      "thumbnail.png",
+      "screenshot1.png",
+      "screenshot2.png",
+      "screenshot3.png",
+      "screenshot4.png"
+    },
+    description = "Your magic tome has been stolen by the weather wizard Ogro! Use your summoning magic to plant helpful tubers and mandrakes to make your way through three handcrafted dungeons. Overcome foe after foe to retrieve what is rightfully yours and reunite with your floral friends! <br /> Game made in 72 hours for <a href=\"https://ldjam.com/events/ludum-dare/55\">Ludum Dare 55</a>, with the theme \"Summoning\"."
+  },
+  {
     name = "Mr Final Boss",
     name_normalized = "mr-final-boss",
     type = "game",
@@ -64,6 +85,44 @@ return {
       "screenshot3.jpg"
     },
     description = "A wholesome, music-filled arcade rhythm game in which a young, reclusive rocker goes on a journey of self-discovery. Once she begins to follow her dreams and finds her inner voice, she discovers that it is LOUD! <br /> One of the games I've worked on at Hyperstrange"
+  },
+  {
+    name = "Seafarer's Spirit",
+    name_normalized = "seafarers-spirit",
+    type = "game",
+    link = "https://duckonaut.itch.io/seafarers-spirit",
+    tech = {
+      "cpp"
+    },
+    targets = {
+      "windows",
+    },
+    images = {
+      "thumbnail.png",
+      "screenshot1.png",
+      "screenshot2.png",
+    },
+    description = "An experimental roguelike about ship combat on the sea. <br /> Game made for <a href=\"https://itch.io/jam/7drl-challenge-2024\">7DRL 2024</a>."
+  },
+  {
+    name = "Snapdragon",
+    name_normalized = "snapdragon",
+    type = "game",
+    link = "https://saturnyoshi.itch.io/snapdragon",
+    tech = {
+      "gamemaker"
+    },
+    targets = {
+      "windows",
+      "html5",
+    },
+    images = {
+      "thumbnail.png",
+      "screenshot1.png",
+      "screenshot2.png",
+      "screenshot3.png"
+    },
+    description = "Play as a stretchy dragon, fight monsters and get to the end. <br /> Game made for <a href=\"https://itch.io/jam/7drl-challenge-2023\">7DRL 2023</a>."
   },
   {
     name = "WUZMAG",

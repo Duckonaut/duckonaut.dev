@@ -1,5 +1,22 @@
 return {
     {
+        name = "Reluax",
+        name_normalized = "reluax",
+        type = "project",
+        link = "https://github.com/duckonaut/reluax",
+        tech = {
+            "rust"
+        },
+        targets = {
+            "linux",
+        },
+        images = {
+            "logo.png"
+        },
+        description =
+        "Reluax is a web framework written in Rust that uses a custom Lua dialect for templating and routing. It's designed to be fast enough, powerful through use of an extensible language like Lua, but most importantly, easy to use and understand.<br/> This website is built using Reluax, read about it more in the <a href=\"/blog/building-reluax\">blog post</a>."
+    },
+    {
         name = "hyprload",
         name_normalized = "hyprload",
         type = "project",
