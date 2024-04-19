@@ -1,3 +1,0 @@
-return function()
-    return "404 Not Found"
-end
