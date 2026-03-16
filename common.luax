@@ -16,7 +16,7 @@ return function(props)
       'blog.css'
     }
   local scripts = props.attrs.scripts or
-    { 'index.js' }
+    { 'index.js', 'GlslCanvas.js' }
 
   local style_tags = {}
   for _, stylesheet in ipairs(stylesheelts) do
@@ -51,8 +51,6 @@ return function(props)
             src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
 
     {$ script_tags $}
 
