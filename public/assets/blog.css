@@ -76,6 +76,7 @@ td.line-number {
   font-weight: bold;
   margin: 0;
   padding: 0;
+  padding-top: 32px;
 }
 
 .blog-post-date {
