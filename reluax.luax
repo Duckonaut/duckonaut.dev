@@ -15,10 +15,10 @@ local blogposts = require("blog.posts")
 
 math.randomseed(os.time())
 
-local wrap_component = function(component)
+local wrap_component = function(component, omit_navbar)
     return
     <Common>
-      <Navbar />
+      {$ omit_navbar and "" or <Navbar /> $}
       <div class="back-shadows"></div>
       <div id="app-main">
         {$ component $}
